@@ -1,0 +1,27 @@
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+.video{
+  display: flex;
+  margin-left: 0px;
+}
+.video a{
+  display: flex;
+  color:black;
+  text-decoration: none;
+
+}
+.video a img{
+  margin-top: 20px;
+  margin-right: 5px;
+}
+nav{
+  display:flex;
+  overflow: hidden;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2020;
+
+}

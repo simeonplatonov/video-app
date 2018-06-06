@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video sharing app || Upload</title>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/upload.css">
+  </head>
+  <body>
+
+      <form  id="form1" action="http://localhost:3000/uploadfile" enctype="multipart/form-data" method="post">
+      <label for="fileInput">
+      <div class="drop_area" ondragleave="toggleDragOverClass(event)" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)" id="drop_area">
+        <input onChange="onFileChange(event)" name="video" type="file" id="fileInput" value="" accept="video/*">
+        <h3>Choose a file or drag it here</h3>
+      </div>
+      </label>
+    </form>
+    <form class="form2" id="form2" method="POST" action="http://localhost:3000/publish" enctype="multipart/form-data">
+
+
+      <div class="w3-light-grey">
+  <div id="progressBar" class="w3-blue w3-center w3-container" style="width:0%"><p id="status"></p></div>
+
+</div>
+      <input name="path" value="" type="hidden" id="path"/>
+      <label for="thumbnail">Add a thumbnail</label>
+      <input accept="image/*" type="file" name="thumbnail" />
+      <input id="submit" name="title" type="text" placeholder="Title"/><br>
+
+    </form>
+    <script src="js/upload.js" type="text/javascript">
+
+    </script>
+  </body>
+</html>

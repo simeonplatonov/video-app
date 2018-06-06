@@ -1,0 +1,52 @@
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+.drop_area{
+
+ outline: 2px dashed gray;
+ outline-offset: -20px;
+ text-align: center;
+ width:60%;
+ padding: 10%;
+ margin: 20px auto;
+ color: #3e4b5e;
+ background: #c7c8c9;
+ cursor: pointer;
+}
+#fileInput{
+  display: none;
+}
+h3{
+  cursor: pointer;
+}
+.dragover{
+   outline-offset: -10px;
+   background-color: #eaeaea;
+}
+
+.form2{
+  width:60%;
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+  background: #036300;
+  padding: 40px;
+}
+
+.w3-light-grey{
+  width: 100%;
+}
+.form2 input[type="text"]{
+  width:50%;
+
+  margin: 20px auto;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.form2 input[type="text"]:focus{
+  color:white;
+  background-color: black;
+}
+.hidden{
+  display: none;
+}
